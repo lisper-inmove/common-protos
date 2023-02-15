@@ -4,9 +4,9 @@ syntax = "proto3";
    分页查询通用字段
  */
 
-package CommonProto.PaginationSearch;
+package CommonProto.PSearch;
 
-message PaginationSearch {
+message PSearch {
   repeated Matcher matchers = 1;
   string sortby = 2;
   int32 page = 3;
