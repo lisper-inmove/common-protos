@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+/**
+   分页查询通用字段
+ */
+
+package CommonProto.PaginationSearch;
+
+message PaginationSearch {
+  repeated Matcher matchers = 1;
+  string sortby = 2;
+  int32 page = 3;
+  int32 size = 4;
+}
+
+message Matcher {
+  string k = 1;
+  string v = 2;
+  string t = 3;
+}
