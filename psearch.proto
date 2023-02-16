@@ -16,5 +16,5 @@ message PSearch {
 message Matcher {
   string k = 1;
   string v = 2;
-  string t = 3;
+  int32 t = 3;
 }
